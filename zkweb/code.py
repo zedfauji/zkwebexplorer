@@ -11,7 +11,7 @@ from zk import ZooKepperConnection
 urls = ('/(.*)', 'node')
 render = web.template.render('templates/')
 
-zkc = ZooKepperConnection("192.168.0.71:2181")
+zkc = ZooKepperConnection("zk1:2181")
 
 class node:
     def GET(self, url = ""):
